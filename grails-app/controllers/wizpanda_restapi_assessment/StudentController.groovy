@@ -3,7 +3,9 @@ package wizpanda_restapi_assessment
 
 import grails.rest.*
 import grails.converters.*
+import org.springframework.web.bind.annotation.CrossOrigin
 
+@CrossOrigin(origins = "http://localhost:4200")
 class StudentController extends RestfulController {
     def studentService
     static responseFormats = ['json', 'xml']
